@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+<link rel="stylesheet" href="main.css">
+<title>SCNS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+<div class="bar">
+  <a id="1" href="C:\Users\rk info\Desktop\SWOG-1\home\main.html"></a>
+  <a id="2" href="C:\Users\rk info\Desktop\SWOG-1\about\main.html"></a>
+  <a id="3" href="C:\Users\rk info\Desktop\SWOG-1\sign in\main.html"></a>
+  <a id="4" href="C:\Users\rk info\Desktop\SWOG-1\read more\main.html"></a>
+  <a id="5" href="C:\Users\rk info\Desktop\SWOG-1\training\main.html"></a>
+  <a id="6" href="C:\Users\rk info\Desktop\SWOG-1\home\main.html"></a>
+</div>
+</div>
+<div class="platform">
+	<img src="icon.png">
+<div class="back">
+ <div class="form">
+	<p class="mid" i>user name</p>
+	<input class="mid1" id="user" type="text" name="user">
+	<p class="mid">pasword</p>
+	<input class="mid1"  id="pw" type="password" name="user">
+	<p class="mid">mail</p>
+	<input class="mid1"  id="email" type="text" name="user">
+    <div class="but">
+	<button class="bb" id="hal" onclick="signin()">sign in </button>
+	</div>
+	<div class="but">
+	<button class="bb" onclick="backto()">login</button>
+	</div>
+ </div>
+</div>
+<div class="back2">
+ <div class="form2">
+	<p class="mid">user name</p>
+	<input  class="mid1"  id="userlog" type="text" name="user">
+	<p class="mid">pasword</p>
+	<input  class="mid1"  id="pwlog" type="password" name="user">
+	<div class="but">
+	<button class="bb" id="lin" href="" onclick="login()">login</button>
+	</div>
+	<div class="but">
+	<button class="bb" onclick="sign()">sign in</button>
+	</div>
+ </div>
+</div>
+</div>
+
+<script>
+
+    var object= {
+    a :"home" , 
+    b :"about" ,
+    c :"choise" ,
+    d :"read more" ,
+    e :"training" ,
+    f :"6"
+
+  } ;
+  document.getElementById("1").innerHTML = object.a; 
+  document.getElementById("2").innerHTML = object.b; 
+  document.getElementById("3").innerHTML = object.c; 
+  document.getElementById("4").innerHTML = object.d; 
+  document.getElementById("5").innerHTML = object.e; 
+  document.getElementById("6").innerHTML = object.f; 
+	$(".back").hide() ; 
+    function sign(){
+    $(".back2").hide(1000) ; 
+    $(".back").show(1000) ; 
+    }
+    var a = 0 ; 
+	function signin(){ 
+      var n = localStorage.getItem('counter');
+      if (n === null) {
+      n = 0;
+      } else {
+      n++;
+      }
+      localStorage.setItem("counter", n)
+      a = localStorage.getItem('counter')
+      localStorage.setItem(a, $("#user").val()+ $("#pw").val())
+      }
+      function backto(){
+    $(".back").hide(1000) ; 
+    $(".back2").show(1000) ; 
+      }
+      function login(){
+      	var c =$("#userlog").val()+$("#pwlog").val() ;
+      	for (var i = 0; i <1000; i++) {
+      		if(localStorage.getItem(i)=== c){
+        window.location.replace("C:/Users/rk info/Desktop/SWOG-1/choise/main.html")      
+         }
+       	}
+      }
+</script>
+  </body>
+</html>
