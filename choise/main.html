@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<link rel="stylesheet" href="main.css">
+<title>SWOG</title>
+  </head>
+  <body>
+<script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+<h1>3</h1>
+<div class="bar">
+  <a id="1" href="C:\Users\rk info\Desktop\SWOG-1\home\main.html"></a>
+  <a id="2" href="C:\Users\rk info\Desktop\SWOG-1\about\main.html"></a>
+  <a id="3" href="C:\Users\rk info\Desktop\SWOG-1\sign in\main.html"></a>
+  <a id="4" href="C:\Users\rk info\Desktop\SWOG-1\read more\main.html"></a>
+  <a id="5" href="C:\Users\rk info\Desktop\SWOG-1\training\main.html"></a>
+  <a id="6" href="C:\Users\rk info\Desktop\SWOG-1\home\main.html"></a>
+</div>
+<div>
+	<button id="know" onclick="func1()"></button>
+	<button id="dont" onclick="func2()"></button>
+</div>
+<div id="paths">
+<button id="path1" href=""></button>
+<button id="path2" href=""></button>
+<button id="path3" href=""></button>
+<button id="path4" href=""></button>
+</div>
+<div id="test">
+	<p id="testText"></p>
+	<button id="testlink" href=""></button>
+</div>
+<script>
+	$("#paths").hide()
+	$("#test").hide()
+	var i = 0 ;
+	var j = 0 ; 
+	function func1(){
+		i++ ; 
+		if(i % 2 !== 0){
+		    $("#paths").show(1000)	
+		    $("#test").hide(1000)
+		}	
+		else if(i % 2 === 0){
+		    $("#paths").hide(1000)
+		}
+	}
+	function func2(){
+		j++ ; 
+		if(j % 2 !== 0){
+		    $("#test").show(1000)	
+		    $("#paths").hide(1000)
+		}	
+		else if(i % 2 === 0){
+		    $("#test").hide(1000)
+		}
+	}
+  var paragraph ={
+  	a : "Origine : Locution adverbiale employée en traduction pour signifier, dans un texte étranger, que le passage concerné est écrit en français dans le texte dorigine. Cette référence renforçant la volonté spécifique de lauteur de renforcer ses propos, voire de faire un effet de style."
+  }
+  document.getElementById("testText").innerHTML = paragraph.a; 
+  var button = {
+  	a : 'you know what you want to be' , 
+  	b : 'you dont know what you want to be' ,
+  	c : 'docter' ,
+  	d : 'DJ' ,
+  	e : 'bissness man ' ,
+  	f : 'Football player' ,
+  	g : 'click to start your test'
+  } ; 
+  document.getElementById("know").innerHTML = button.a; 
+  document.getElementById("dont").innerHTML = button.b; 
+  document.getElementById("path1").innerHTML = button.c; 
+  document.getElementById("path2").innerHTML = button.d; 
+  document.getElementById("path3").innerHTML = button.e; 
+  document.getElementById("path4").innerHTML = button.f; 
+  document.getElementById("testlink").innerHTML = button.g; 
+  var object= {
+    a :"home" , 
+    b :"about" ,
+    c :"choise" ,
+    d :"read more" ,
+    e :"training" ,
+    f :"6"
+  } ;
+  document.getElementById("1").innerHTML = object.a; 
+  document.getElementById("2").innerHTML = object.b; 
+  document.getElementById("3").innerHTML = object.c; 
+  document.getElementById("4").innerHTML = object.d; 
+  document.getElementById("5").innerHTML = object.e; 
+  document.getElementById("6").innerHTML = object.f; 
+</script>
+  </body>
+</html>
