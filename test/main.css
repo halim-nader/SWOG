@@ -1,0 +1,79 @@
+.bar {
+overflow: hidden;
+background-color: #333 ; 
+}
+.bar a{
+	float: left;
+	color:#f2f2f2;
+	text-align: center;
+	padding: 14px 16px ; 
+	text-decoration: none ; 
+}
+.bar a:hover{
+	background-color: #ddd ; 
+	color: black ; 
+}
+div {
+	text-align: left;
+	padding: 14px 16px ;
+	text-decoration: none ; 
+	color: black ;
+	background : #ddd ;
+	margin-left : 75px;
+	margin-right: 700px
+}
+div:hover {
+    background: #f1c40f;
+}
+.underbar {
+bottom: 0;
+overflow: hidden;
+background-color: #333 ; 
+}
+.underbar a{
+	float: left ;
+	color:#f2f2f2;
+	text-align: center;
+	padding: 14px 16px ; 
+	text-decoration: none ; 
+}
+.underbar a:hover{
+	background-color: #ddd ; 
+	color: black ; 
+}
+h1 {
+	margin-left: 75px ;
+}
+body {
+	background: url(tall.jpg);
+	background-size: cover;
+}
+.result {
+	text-align: left;
+	padding: 14px 16px ;
+	text-decoration: none ; 
+	color: black ;
+	margin-left : 75px;
+	margin-right: 70px
+}
+.result:hover {
+	background: #f1c40f;
+}
+.out {
+	position: relative;
+	top: -200px;
+	margin-right: 75px ; 
+    margin-left : 700px ; 
+    border : 1px solid white ;
+    border-radius: 15px ; 
+    background-color: #ddd ; 
+    opacity: 0.8 ; 
+    height: 400px ;
+    font-size: 30px ; 
+    text-align: center;
+    font-family: Impact,Charcoal,sans-serif ;
+    }
+.out a{
+	text-decoration : none ;
+     color: #b33939 ;
+}

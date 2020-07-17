@@ -7,15 +7,20 @@
   </head>
   <body>
 <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
-<h1>4</h1>
 <div class="bar">
   <a id="1" href="C:\Users\rk info\Desktop\SWOG-1\home\main.html"></a>
   <a id="2" href="C:\Users\rk info\Desktop\SWOG-1\about\main.html"></a>
   <a id="3" href="C:\Users\rk info\Desktop\SWOG-1\sign in\main.html"></a>
   <a id="4" href="C:\Users\rk info\Desktop\SWOG-1\read more\main.html"></a>
   <a id="5" href="C:\Users\rk info\Desktop\SWOG-1\training\main.html"></a>
-  <a id="6" href="C:\Users\rk info\Desktop\SWOG-1\home\main.html"></a>
 </div>
+<h1>About Swog : </h1>
+<div class="about">
+
+<div id="par">
+<p id="par1"></p>
+    </div>
+    </div>
 <script>
   var object= {
     a :"home" , 
@@ -23,13 +28,16 @@
     c :"choise" ,
     d :"read more" ,
     e :"training" ,
-    f :"6"
-  } ;  document.getElementById("1").innerHTML = object.a; 
+  } ;  
+  var parag = {
+  	a : "Swog is dream to help peaple understand there selfs and to help them know wich path or career they are good at frome a young age also will help theme also to echeave there dreams by providing training and bootkamps" 
+  }
+  document.getElementById("1").innerHTML = object.a; 
   document.getElementById("2").innerHTML = object.b; 
   document.getElementById("3").innerHTML = object.c; 
   document.getElementById("4").innerHTML = object.d; 
   document.getElementById("5").innerHTML = object.e; 
-  document.getElementById("6").innerHTML = object.f; 
+  document.getElementById("par1").innerHTML = parag.a; 
 </script>
   </body>
 </html>

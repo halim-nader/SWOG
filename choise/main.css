@@ -1,0 +1,114 @@
+.bar {
+overflow: hidden;
+background-color: #333 ; 
+}
+.bar a{
+	float: left;
+	color:#f2f2f2;
+	text-align: center;
+	padding: 14px 16px ; 
+	text-decoration: none ; 
+}
+.bar a:hover{
+	background-color: #ddd ; 
+	color: black ; 
+}
+.underbar {
+bottom: 0;
+overflow: hidden;
+background-color: #333 ; 
+}
+.underbar a{
+	float: left ;
+	color:#f2f2f2;
+	text-align: center;
+	padding: 14px 16px ; 
+	text-decoration: none ; 
+}
+.underbar a:hover{
+	background-color: #ddd ; 
+	color: black ; 
+}
+.big{
+	width: 560px ; 
+	height: 100px;
+	display:flex;
+	margin: 150px auto ; 
+	background-color: white ;
+	border-radius: 5% ;
+    margin-left: 550px
+}
+.left{
+	width:  280px ; 
+	height: 100px ;
+	background: #ecf0f1;
+	border-radius: 5% ;
+	text-align: center; 
+}
+.right{
+	width:  280px ; 
+	height: 100px ;
+	background: #ecf0f1  ;
+	border-radius: 5% ;
+	text-align: center; 
+}
+.right:hover{
+	width:  280px ; 
+	height: 100px ;
+	background: #f39c12  ;
+	border-radius: 5% ;
+}
+.left:hover{
+	width:  280px ; 
+	height: 100px ;
+	background: #f39c12;
+	border-radius: 5% ;
+}
+button {
+ margin-top: 35px
+
+}
+#paths{
+	width: 800px ; 
+	height: 80px;
+	margin: 50px auto ; 
+	background-color: #74b9ff ;
+	border-radius: 5% ;
+	text-align: center; 
+
+}
+#test{
+	width: 800px ; 
+	height: 100px;
+	margin: 50px auto ; 
+	background-color: #d63031 ;
+	border-radius: 5% ;
+	text-align: center; 
+	color: white ; 
+
+}
+#paths a{
+	margin-top: 30px ;
+	color:#f2f2f2;
+	text-align: center;
+	padding: 14px 16px ; 
+	text-decoration: none ; 
+}
+#test a{
+	margin-top: 30px ;
+	color:#f2f2f2;
+	text-align: center;
+	padding: 14px 16px ; 
+	text-decoration: none ; 
+}
+h2{
+	margin-top: 30px ;
+	color: #ddd ; 
+}
+h1 {
+	margin-left: 500px 
+}
+body{
+	background-image: url(image2.jpg);
+	background-size: cover;
+}
